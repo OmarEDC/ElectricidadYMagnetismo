@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Electricidad y Magnetismo</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="row">
+        <div class="col-md-6">
+          <a
+            href="https://www.uacm.edu.mx/"
+            ><img id="logo" src="img/LogoUACMCC.jpg" width="200"
+          /></a>
+        </div>
+        <div class="col-md-6 align-self-center fw-bold">
+          <h1>Electricidad y Magnetismo</h1>
+
+          <figcaption class="text-muted">
+            <h3>Semestre 2021-2</h3>
+          </figcaption>
+          <ul
+            class="
+              nav
+              col-12 col-lg-auto
+              me-lg-auto
+              mb-2
+              justify-content-center
+              mb-md-0
+            "
+          >
+            <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+          </ul>
+        </div>
+        <hr />
+      </header>
+
+      <main>
+        <h5>Campo eléctrico</h5>
+        <p>
+          Una de las ideas principales al hablar de un campo eléctrico es de que
+          este ejerce influencia sobre un determinado espacio, por lo que se
+          requiere de puntos de prueba para poder medirlo. La intensidad del
+          campo eléctrico de mide mediante la Ley de Coulumb.
+        </p>
+        <br>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+          <div class="card h-100">
+              <img src="img/lineadeCampo.png" class="card-img-left" alt="...">
+              <h6>Modelos de un campo eléctrico según la carga.</h6>
+              <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text">El tipo de carga de los cuerpos van a determinar como será la fuerza eléctrica entre ellos, es decir si las cragas son iguales la fuerza será repulsiva, si son diferentes la fuerza será atractiva.
+                  </p>
+              </div>
+              <div class="card-footer">
+                  <small class="text-muted">Ley de Coulomb
+                  </small>
+                  <img src="img/Coulomb.png" class="rounded mx-auto d-block" alt="" width="300">
+              </div>
+              <p>Ingresa los datos para calcular </p>
+
+              <form>
+                <!--INGRESO DE LA FÓRMULA-->
+                <div class="form">
+                  <label for="Carga1">q1 (Carga del primer cuerpo):</label><br>
+                  <input type="number" id="Carga1" name="Carga1" required><br>
+                  <label for="Carga2">q2 (Carga del segundo cuerpo):</label><br>
+                  <input type="number" id="Carga2" name="Carga2" required><br>
+                  <label for="Distancia">r (Distancia entre cargas)</label><br>
+                  <input type="number" id="Distancia" name="Distancia" required><br>
+                </div>
+              </form>
+              <br>
+              <input type="submit" value="Calcular" onclick="GuardarEnCatalogo()"> <br>
+
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100">
+              <img src="img/campoElectrico" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Campo eléctrico</h5>
+                  <p class="card-text">Una de las ideas principales al hablar de un campo eléctrico es de que
+                    este ejerce influencia sobre un determinado espacio, por lo que se
+                    requiere de puntos de prueba para poder medirlo.
+                  </p>
+              </div>
+
+              <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+          </div>
+      </div>
+      </main>
+
+      <hr />
+      <footer class="row">
+        <div class="col-md-6">
+            <a href="https://github.com/OmarEDC"><img id="logo"
+                    src="img/github-394322_640.png" width="200"></a>
+        </div>
+        <div class="col-md-6 align-self-center">
+            <span class="fs-8">
+                <h4>Contacto: hecotlaloc@gmail.com</h4>
+                <b>Omar Ulises Hernández Cervantes</b>
+                <br>
+                <br>
+            </span>
+        </div>
+    </div>
+  </body>
+</html>
