@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/archivo.js" language="javascript" type="text/javascript"></script>
     <title>Electricidad y Magnetismo</title>
   </head>
   <body>
@@ -28,6 +29,7 @@
           <figcaption class="text-muted">
             <h3>Semestre 2021-2</h3>
           </figcaption>
+          <!--
           <ul
             class="
               nav
@@ -44,6 +46,7 @@
             <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
             <li><a href="#" class="nav-link px-2 text-white">About</a></li>
           </ul>
+        -->
         </div>
         <hr />
       </header>
@@ -61,18 +64,18 @@
       <div class="col">
           <div class="card h-100">
               <img src="img/lineadeCampo.png" class="card-img-left" alt="...">
-              <h6>Modelos de un campo eléctrico según la carga.</h6>
+              <h6><i>Modelos de un campo eléctrico según la carga.</i></h6>
               <div class="card-body">
                   <h5 class="card-title"></h5>
                   <p class="card-text">El tipo de carga de los cuerpos van a determinar como será la fuerza eléctrica entre ellos, es decir si las cragas son iguales la fuerza será repulsiva, si son diferentes la fuerza será atractiva.
                   </p>
-              </div>
-              <div class="card-footer">
+                  <hr>
                   <small class="text-muted">Ley de Coulomb
                   </small>
                   <img src="img/Coulomb.png" class="rounded mx-auto d-block" alt="" width="300">
               </div>
-              <p>Ingresa los datos para calcular </p>
+              <div class="card-footer">
+                <p>Ingresa los datos para calcular </p>
 
               <form>
                 <!--INGRESO DE LA FÓRMULA-->
@@ -86,24 +89,28 @@
                 </div>
               </form>
               <br>
-              <input type="submit" value="Calcular" onclick="GuardarEnCatalogo()"> <br>
+              <input type="submit" value="Calcular" onclick="Calcular()"> <br>
 
+                  </div>
+              
           </div>
       </div>
       <div class="col">
           <div class="card h-100">
               <img src="img/campoElectrico" class="card-img-top" alt="...">
+              <h6><i>Dipolo eléctrico con cargas diferentes.</i></h6>
               <div class="card-body">
                   <h5 class="card-title">Campo eléctrico</h5>
                   <p class="card-text">Una de las ideas principales al hablar de un campo eléctrico es de que
                     este ejerce influencia sobre un determinado espacio, por lo que se
                     requiere de puntos de prueba para poder medirlo.
                   </p>
-                  <img src="img/formulaCampoElectrico.jpg" alt="">
+                  <hr>
+                  <small class="text-muted">Fórmula campo eléctrico</small>
+                  <img src="img/formulaCampoElectrico.jpg" class="rounded mx-auto d-block" alt="">
               </div>
 
               <div class="card-footer">
-                  <small class="text-muted">Fórmula campo eléctrico</small>
                   <p>Ingresa los datos para calcular el campo eléctrico</p>
 
                   <form>
@@ -112,12 +119,16 @@
                       <label for="FuerzaElectrica">Fuerza eléctrica:</label><br>
                       <input type="number" id="FuerzaElectrica" name="FuerzaElectrica" required><br>
                       <label for="CantidadCarga">Cantidad de carga:</label><br>
-                      <input type="number" id="Distancia" name="Distancia" required><br>
+                      <input type="number" id="CantidadDeCarga" name="CantidadDeCarga" required><br>
                     </div>
                   </form>
                   <br>
-              <input type="submit" value="Calcular" onclick="GuardarEnCatalogo()"> <br>
-
+              <input type="submit" value="Calcular" onclick="CalcularCampoElectrico()"> <br>
+              <br>
+              <p>
+                El campo eléctrico vale:
+              </p>
+              <output type="text" id="CampoElectrico"></output>
               </div>
           </div>
       </div>
