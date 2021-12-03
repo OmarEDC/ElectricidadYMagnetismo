@@ -52,30 +52,50 @@
       </header>
 
       <main>
-        <h5>Campo eléctrico</h5>
+        <h2>Electricidad</h2>
         <p>
-          Una de las ideas principales al hablar de un campo eléctrico es de que
-          este ejerce influencia sobre un determinado espacio, por lo que se
-          requiere de puntos de prueba para poder medirlo. La intensidad del
-          campo eléctrico de mide mediante la Ley de Coulumb.
+          La palabra "electricidad" puede evocar una imagen de moderna tecnología compleja: luces motores,
+          aparatos electrónicos y computadoras. Pero la fuerza eléctrica juega un papel importante incluso
+          en los aspectos más profundos de la vida humana. <br>
+          Se sabe que la electricidad se puede presentar de forma natural como los rayos, sin embargo la idea de que se pueda producir (por ejemplo
+          con frotamiento, es decir <b> electricidad estática </b> entre otras formas más avanzadas),</b> fue la que 
+          inspiró a los númerosos experimentos que posteriormente dieron origen a tantos aparatos y herramientas que hoy son indispensables en nuestra vida cotidiana.
+          <br><br>
+          Conceptos clave a tener en cuenta en esta primera parte son: <b>carga eléctrica, campo eléctrico y Ley de Coulomb. </b>
         </p>
         <br>
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
           <div class="card h-100">
               <img src="img/lineadeCampo.png" class="card-img-left" alt="...">
-              <h6><i>Modelos de un campo eléctrico según la carga.</i></h6>
+              <h6><i>Modelos de un campo eléctrico según la carga (azul negativa y rojo positiva).</i></h6>
               <div class="card-body">
-                  <h5 class="card-title"></h5>
-                  <p class="card-text">El tipo de carga de los cuerpos van a determinar como será la fuerza eléctrica entre ellos, es decir si las cragas son iguales la fuerza será repulsiva, si son diferentes la fuerza será atractiva.
+                  <h5 class="card-title">Carga eléctrica</h5>
+                  <p class="card-text">El tipo de carga de los cuerpos van a determinar como será 
+                    la fuerza eléctrica entre ellos, es decir si las cragas son iguales la fuerza 
+                    será repulsiva, si son diferentes la fuerza será atractiva.
+                    Para encontrar la magnitud de la fuerza se usa la <b>ley de Coulomb.</b>
                   </p>
                   <hr>
                   <small class="text-muted">Ley de Coulomb
                   </small>
                   <img src="img/Coulomb.png" class="rounded mx-auto d-block" alt="" width="300">
+                  <p>Donde:</p>
+                  <ul>
+                    <li>F: Fuerza electrostática en N.</li>
+                    <li>k: Constante de Coulomb en N*m<sup>2</sup>/C<sup>2</sup>.</li>
+                    <li>q<sub>1</sub> y q<sub>2</sub> Carga del cuerpo en C.</li>
+                    <li>r: Distancia entre cuerpos en m.</li>
+                  </ul>
+                  <p>
+                    <br>Para hacer los cálculos primeramente hay que conocer el valor de las cargas: <br>
+                    El electrón y el protón tienen la misma carga: 1.6 * 10<sup>-19</sup>C, es decir: 0.00000000000000000016 C. <br>
+                    Por otra parte las distancias aunque se miden en m, son muy pequeñas por ejemplo: r=0.53 * 10<sup>-10</sup> m, es decir:
+                    0.000000000053 m.
+                  </p>
               </div>
               <div class="card-footer">
-                <p>Ingresa los datos para calcular </p>
+                <p>Ingresa los datos para calcular la fuerza eléctrica</p>
 
               <form>
                 <!--INGRESO DE LA FÓRMULA-->
@@ -90,7 +110,11 @@
               </form>
               <br>
               <input type="submit" value="Calcular" onclick="Calcular()"> <br>
-
+              <br>
+              <p>
+                La fuerza eléctrica vale:
+              </p>
+              <output type="text" id="CampoElectrico">0</output>&nbspN
                   </div>
               
           </div>
@@ -103,11 +127,17 @@
                   <h5 class="card-title">Campo eléctrico</h5>
                   <p class="card-text">Una de las ideas principales al hablar de un campo eléctrico es de que
                     este ejerce influencia sobre un determinado espacio, por lo que se
-                    requiere de puntos de prueba para poder medirlo.
+                    requiere de puntos de prueba para poder medirlo. 
                   </p>
                   <hr>
                   <small class="text-muted">Fórmula campo eléctrico</small>
                   <img src="img/formulaCampoElectrico.jpg" class="rounded mx-auto d-block" alt="">
+                  <p>Donde:</p>
+                  <ul>
+                    <li>E: Campo eléctrico en N/C.</li>
+                    <li>F: Fuerza eléctrica en N/C.</li>
+                    <li>q: Cantidad de carga.</li>
+                  </ul>
               </div>
 
               <div class="card-footer">
@@ -128,7 +158,7 @@
               <p>
                 El campo eléctrico vale:
               </p>
-              <output type="text" id="CampoElectrico"></output>
+              <output type="text" id="CampoElectrico">0</output>&nbspN/C
               </div>
           </div>
       </div>

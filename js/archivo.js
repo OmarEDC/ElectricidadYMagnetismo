@@ -1,4 +1,4 @@
-window.alert("Proyecto de portafolio para Electricidad y Magnetismo");
+//window.alert("Proyecto de portafolio para Electricidad y Magnetismo");
 
 var campoElectrico = 0;
 
@@ -8,6 +8,7 @@ function CalcularCampoElectrico(){
     
 
     campoElectrico=fuerzaElectrica/cantidadDeCarga;
+    
     
     document.getElementById('CampoElectrico').innerHTML = campoElectrico;
 
