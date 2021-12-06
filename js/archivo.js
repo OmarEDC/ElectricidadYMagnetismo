@@ -11,6 +11,16 @@ function CalcularCampoElectrico(){
     
     
     document.getElementById('CampoElectrico').innerHTML = campoElectrico;
-
     
+}
+
+function CalcularFuerzaElectrica(){
+    carga1 = document.getElementById('Carga1').value;
+    carga2 = document.getElementById('Carga2').value;
+    distancia = document.getElementById('Distancia').value;
+
+    fuerzaElectrica=(9000000000*(carga1*carga2))/(distancia*distancia);
+
+    document.getElementById('FuerzaElectrica').innerHTML = fuerzaElectrica;
+
 }
